@@ -1,0 +1,1471 @@
+@-ms-viewport{
+  width: device-width;
+}
+
+html {
+    background-color: black;
+}
+
+body {
+    opacity: 1;
+    transition: 1s opacity;
+}
+body.fade-out {
+    opacity: 0;
+    transition: none;
+}
+
+.row, .container{
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+.space-0 {
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+
+.sidenav .main-nav {
+	margin-top: 13px;
+	font-weight: bold;
+	font-family: "Bookman", sans-serif;
+    padding: 18px 10px 18px 40px;
+    text-decoration: none;
+    font-size: 22px;
+    color: rgb(150,150,150);
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav .sub-nav {
+	margin-top: 13px;
+	font-family: "Bookman", sans-serif;
+    padding: 18px 10px 18px 55px;
+    text-decoration: none;
+    font-size: 18px;
+    color: rgb(150,150,150);
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    margin-top: 12px;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    text-decoration: none;
+    color: rgb(150,150,150);
+}
+
+@media screen and (max-height: 450px) {
+  	.sidenav {padding-top: 15px;}
+  	.sidenav a {font-size: 18px;}
+}
+
+/* Mobile screens */
+
+@media screen and (min-width: 320px) and (max-width: 599px) {
+	.sidenav {
+    	height: 100%;
+   		width: 0;
+    	position: fixed;
+    	z-index: 200;
+    	top: 0;
+    	bottom: 0;
+    	overflow-y: scroll;
+    	right: 0;
+    	background-color: rgb(40,40,40);
+    	overflow-x: hidden;
+    	transition: 0.3s;
+    	padding-top: 60px;
+    	border-left: rgb(30,30,30);
+    	border-right: rgb(30,30,30);
+    	border-width: 1px;
+    	border-style: solid;
+	}
+
+	.laptop, .copyright-big, .content-border-big, .btn-what-we-do-ipad, .dropdown, .dropdown-content {
+		display: none;
+	}
+
+	.container {
+		width: 100%;
+		margin: auto;
+	}
+
+	.small-container {
+		width: 90%;
+		margin: auto;
+	}
+
+	.smallest-container {
+		width: 70%;
+		margin: auto;
+	}
+
+	header {
+		transition: background 0.2s linear;
+		-webkit-transform-style: preserve-3d;
+  		-moz-transform-style: preserve-3d;
+  		transform-style: preserve-3d;
+		height: 75px;
+		width: 100%;
+		background: rgba(0,0,5,0.6);
+		position: fixed;
+		z-index: 100;
+	}
+
+	#logo-white {
+		display: block;
+		position: relative;
+  		top: 50%;
+  		transform: translateY(-58%);
+		float: left;
+		height: 30px;
+		width: 30px;
+		margin-left: 4.5%;
+	}
+
+	#logo-navy {
+		display: none;
+		position: relative;
+  		top: 50%;
+  		transform: translateY(-58%);
+		float: left;
+		height: 30px;
+		width: 30px;
+		margin-left: 4.5%;
+	}
+
+	#title-white {
+		display: block;
+		position: relative;
+  		top: 50%;
+  		transform: translateY(-50%);
+		float: left;
+		color: rgb(255,255,255);
+		font-family: "Bookman", sans-serif;
+		font-size: 35px;
+		font-weight: bold;
+		letter-spacing: 1.5px;
+		margin-left: 1.5%;
+		margin-left: 2.5%;
+	}
+
+	#title-navy {
+		display: none;
+		position: relative;
+  		top: 50%;
+  		transform: translateY(-50%);
+		float: left;
+		color: rgb(0,0,5);
+		font-family: "Bookman", sans-serif;
+		font-size: 35px;
+		font-weight: bold;
+		letter-spacing: 1.5px;
+		margin-left: 2.5%;
+	}
+
+	nav {
+		position: relative;
+  		top: 50%;
+  		transform: translateY(-50%);
+		float: right;
+		margin-right: 25px;
+	}
+
+	.fa-caret-down {
+		padding: 10px;
+	}
+
+	.nav-list {
+		color: rgb(255,255,255);
+		font-family: "Bookman", sans-serif;
+		font-size: 18px;
+		font-weight: bold;
+		padding: 12px;
+	}
+
+	#menu-icon {
+		display: block;
+		position: relative;
+  		top: 50%;
+  		transform: translateY(-50%);
+		float: right;
+		margin-right: 7%;
+		width: 35px;
+		height: 35px;
+	}
+
+	#menu-icon-navy {
+		display: none;
+		position: relative;
+  		top: 50%;
+  		transform: translateY(-50%);
+		float: right;
+		margin-right: 7%;
+		width: 35px;
+		height: 35px;
+	}
+
+	.content-border {
+		float: left;
+		-webkit-transform-style: preserve-3d;
+  		-moz-transform-style: preserve-3d;
+  		transform-style: preserve-3d;
+		height: 60px;
+		width: 100%;
+		background-color: rgb(0,0,5);
+		text-align: center;
+	}
+
+	.carousel {
+		margin-top: 75px;
+	}
+
+	.btn-japanese {
+		position: relative;
+  		top: 50%;
+  		transform: translateY(-50%);
+  		padding: 10px;
+  		background: rgb(0,0,5);
+  		font-weight: bold;
+  		color: rgb(255,255,255);
+  		border-style: solid;
+  		border-width: 1px;
+  		border-radius: 3px;
+  		border-color: rgb(255,255,255);
+	}
+
+	.navy-block {
+		float: left;
+		-webkit-transform-style: preserve-3d;
+  		-moz-transform-style: preserve-3d;
+  		transform-style: preserve-3d;
+		height: 100px;
+		width: 100%;
+		background: rgb(18,18,18);
+		text-align: center;
+	}
+
+	.txt-head {
+		text-align: center;
+		position: relative;
+  		top: 50%;
+  		transform: translateY(-50%);
+		color: rgb(255,255,255);
+		font-family: "Bookman", sans-serif;
+		font-size: 23px;
+		font-weight: 100;
+	}
+
+	.line {
+		float: left;
+		width: 100%;
+		height: 1px;
+		background-color: rgb(255,255,255);
+	}
+
+	.txt-icon-head {
+		text-align: center;
+		color: rgb(255,255,255);
+		font-family: "Bookman", sans-serif;
+		font-size: 22px;
+		font-weight: normal;
+		padding-bottom: 20px;
+	}
+
+	.flaticons {
+		display: block;
+    	margin: 0 auto;
+    	margin-bottom: 20px;
+    	margin-top: 20px;
+		height: 80px;
+		width: 80px;
+	}
+
+	.upcoming-events {
+		text-align: center;
+		width: 100%;
+		height: 240px;
+		background: rgb(255,255,255);
+	}
+
+	.upcoming-events-img {
+		width: 100%;
+		height: 120px;
+		background-image: url(../img/disco.jpg);
+		background-size: 100% 100%;
+	}
+
+	.recruitment-img {
+		width: 100%;
+		height: 120px;
+	}
+
+	.recruitment {
+		text-align: center;
+		width: 100%;
+		height: 240px;
+		background: rgb(255,255,255);
+	}
+
+	.sm {
+		float: left;
+		-webkit-transform-style: preserve-3d;
+  		-moz-transform-style: preserve-3d;
+  		transform-style: preserve-3d;
+		width: 100%;
+		height: 180px;
+		background: rgb(0,0,5);
+		text-align: center;
+	}
+
+	.follow-us {
+		margin-top: 25px;
+		font-family: Brush Script Std, Brush Script MT, cursive;
+		font-size: 20px;
+		color: rgb(255,255,255);
+		font-weight: bold;
+	}
+
+	.sm-icon {
+		margin-top: 15px;
+		margin-right: 18px;
+		margin-left: 18px;
+		font-size: 35px;
+		color: rgb(255,255,255);
+	}
+
+	.border-top {
+		margin-top: 20px;
+		border-top: solid;
+		border-color: rgb(255,255,255);
+		border-width: 5px;
+		color: rgb(0,0,5);
+	}
+
+	.copyright-small {
+		color: rgb(30,160,255);
+		font-family: "Bookman", sans-serif;
+		font-size: 13px;
+		font-weight: 200;
+	}
+
+	.terms {
+		margin-left: 20px;
+		color: rgb(30,160,255);
+		font-family: "Bookman", sans-serif;
+		font-size: 13px;
+		font-weight: 200;
+	}
+
+	.privacy {
+		margin-left: 20px;
+		color: rgb(30,160,255);
+		font-family: "Bookman", sans-serif;
+		font-size: 13px;
+		font-weight: 200;
+	}
+}
+
+/* Tablet screens */
+
+@media screen and (min-width: 600px) and (max-width: 1023px) {
+	.sidenav {
+		margin-top: 115px;
+    	height: 100%;
+   		width: 0;
+    	position: fixed;
+    	z-index: 50;
+    	top: 0;
+    	right: 0;
+    	background-color: rgb(40,40,40);
+    	overflow-x: hidden;
+    	transition: 0.3s;
+    	padding-top: 60px;
+    	border-left: rgb(30,30,30);
+    	border-right: rgb(30,30,30);
+    	border-width: 1px;
+	}
+
+	.laptop, .copyright-small, .btn-japanese-small, .line, .dropdown, .dropdown-content {
+		display: none;
+	}
+
+	.container {
+		width: 100%;
+		margin: auto;
+	}
+
+	.small-container {
+		width: 90%;
+		margin: auto;
+	}
+
+	.smallest-container {
+		width: 50%;
+		margin: auto;
+	}
+
+	header {
+		transition: background 0.2s linear;
+		-webkit-transform-style: preserve-3d;
+  		-moz-transform-style: preserve-3d;
+  		transform-style: preserve-3d;
+		height: 115px;
+		width: 100%;
+		background: rgba(0,0,5,0.6);
+		position: fixed;
+		z-index: 1;
+	}
+
+	#logo-white {
+		display: block;
+		position: relative;
+  		top: 50%;
+  		transform: translateY(-58%);
+		float: left;
+		height: 47px;
+		width: 47px;
+		margin-left: 3%;
+	}
+
+	#logo-navy {
+		display: none;
+		position: relative;
+  		top: 50%;
+  		transform: translateY(-58%);
+		float: left;
+		height: 47px;
+		width: 47px;
+		margin-left: 3%;
+	}
+
+	#title-white {
+		display: block;
+		position: relative;
+  		top: 50%;
+  		transform: translateY(-50%);
+		float: left;
+		color: rgb(255,255,255);
+		font-family: "Bookman", sans-serif;
+		font-size: 55px;
+		font-weight: bold;
+		letter-spacing: 1.5px;
+		margin-left: 1.5%;
+		margin-left: 1.5%;
+		z-index: 3;
+	}
+
+	#title-navy {
+		display: none;
+		position: relative;
+  		top: 50%;
+  		transform: translateY(-50%);
+		float: left;
+		color: rgb(0,0,5);
+		font-family: "Bookman", sans-serif;
+		font-size: 55px;
+		font-weight: bold;
+		letter-spacing: 1.5px;
+		margin-left: 1.5%;
+		z-index: 3;
+	}
+
+	nav {
+		position: relative;
+  		top: 50%;
+  		transform: translateY(-50%);
+		float: right;
+		margin-right: 25px;
+	}
+
+	.fa-caret-down {
+		padding: 10px;
+	}
+
+	.nav-list {
+		color: rgb(255,255,255);
+		font-family: "Bookman", sans-serif;
+		font-size: 18px;
+		font-weight: bold;
+		padding: 12px;
+	}
+
+	#menu-icon {
+		display: block;
+		position: relative;
+  		top: 50%;
+  		transform: translateY(-50%);
+		float: right;
+		margin-right: 6%;
+		width: 55px;
+		height: 55px;
+	}
+
+	#menu-icon-navy {
+		display: none;
+		position: relative;
+  		top: 50%;
+  		transform: translateY(-50%);
+		float: right;
+		margin-right: 6%;
+		width: 55px;
+		height: 55px;
+	}
+
+	.content-border {
+		float: left;
+		-webkit-transform-style: preserve-3d;
+  		-moz-transform-style: preserve-3d;
+  		transform-style: preserve-3d;
+		height: 60px;
+		width: 100%;
+		background-color: rgb(0,0,5);
+		text-align: center;
+	}
+
+	.btn-japanese {
+		position: relative;
+  		top: 50%;
+  		transform: translateY(-50%);
+  		padding: 10px;
+  		background: rgb(0,0,5);
+  		font-weight: bold;
+  		color: rgb(30,160,255);
+  		border-style: solid;
+  		border-width: 1px;
+  		border-radius: 3px;
+  		border-color: rgb(30,160,255);
+	}
+
+	.navy-block {
+		float: left;
+		-webkit-transform-style: preserve-3d;
+  		-moz-transform-style: preserve-3d;
+  		transform-style: preserve-3d;
+  		margin-bottom: 20px;
+		height: 100px;
+		width: 100%;
+		background: rgb(18,18,18);
+		text-align: center;
+	}
+
+	.txt-head {
+		text-align: center;
+		position: relative;
+  		top: 50%;
+  		transform: translateY(-50%);
+		color: rgb(255,255,255);
+		font-family: "Bookman", sans-serif;
+		font-size: 23px;
+		font-weight: 100;
+	}
+
+	.txt-icon-head {
+		text-align: center;
+		color: rgb(255,255,255);
+		font-family: "Bookman", sans-serif;
+		font-size: 22px;
+		font-weight: normal;
+		padding-bottom: 20px;
+	}
+
+	.flaticons {
+		display: block;
+    	margin: 0 auto;
+    	margin-bottom: 20px;
+    	margin-top: 20px;
+		height: 80px;
+		width: 80px;
+	}
+
+	.what-we-do-ipad {
+  		text-align: center;
+	}
+
+	.btn-what-we-do-ipad {
+		margin-top: 120px;
+		margin-bottom: 50px;
+  		border-radius: 3px;
+  		padding: 14px;
+		background: rgb(18,18,18);
+  		border-style: solid;
+  		border-width: 1px;
+  		border-color: rgb(255,255,255);
+  		color: rgb(255,255,255);
+	}	
+
+	.what-we-do-laptop {
+		display: none;
+	}
+
+	.upcoming-events {
+		text-align: center;
+		width: 100%;
+		height: 240px;
+		background: rgb(255,255,255);
+	}
+
+	.upcoming-events-img {
+		width: 100%;
+		height: 240px;
+		background-image: url(../img/disco.jpg);
+		background-size: 100% 100%;
+	}
+
+	.recruitment-img {
+		width: 100%;
+		height: 240px;
+	}
+
+	.recruitment {
+		text-align: center;
+		width: 100%;
+		height: 240px;
+		background: rgb(255,255,255);
+	}
+
+	.sm {
+		float: left;
+		-webkit-transform-style: preserve-3d;
+  		-moz-transform-style: preserve-3d;
+  		transform-style: preserve-3d;
+		width: 100%;
+		height: 180px;
+		background: rgb(0,0,5);
+		text-align: center;
+	}
+
+	.follow-us {
+		margin-top: 25px;
+		font-family: Brush Script Std, Brush Script MT, cursive;
+		font-size: 20px;
+		color: rgb(255,255,255);
+		font-weight: bold;
+	}
+
+	.sm-icon {
+		margin-top: 15px;
+		margin-right: 18px;
+		margin-left: 18px;
+		font-size: 35px;
+		color: rgb(255,255,255);
+	}
+
+	.border-top {
+		margin-top: 20px;
+		border-top: solid;
+		border-color: rgb(255,255,255);
+		border-width: 5px;
+		color: rgb(0,0,5);
+	}
+
+	.copyright-big {
+		color: rgb(30,160,255);
+		font-family: "Bookman", sans-serif;
+		font-size: 13px;
+		font-weight: 200;
+	}
+
+	.terms {
+		margin-left: 20px;
+		color: rgb(30,160,255);
+		font-family: "Bookman", sans-serif;
+		font-size: 13px;
+		font-weight: 200;
+	}
+
+	.privacy {
+		margin-left: 20px;
+		color: rgb(30,160,255);
+		font-family: "Bookman", sans-serif;
+		font-size: 13px;
+		font-weight: 200;
+	}
+}
+
+/* Laptop screens */
+
+@media screen and (min-width: 1024px) and (max-width: 1280px) {
+	.sidenav, .ipad, .copyright-small, .btn-japanese-small, .line, .btn-what-we-do-ipad, #menu-icon, #menu-icon-navy {
+		display: none;
+	}
+
+	.container {
+		width: 100%;
+		margin: auto;
+	}
+
+	.small-container {
+		width: 90%;
+		margin: auto;
+	}
+
+	.smallest-container {
+		width: 50%;
+		margin: auto;
+	}
+
+	header {
+		transition: background 0.2s linear;
+		-webkit-transform-style: preserve-3d;
+  		-moz-transform-style: preserve-3d;
+  		transform-style: preserve-3d;
+		height: 115px;
+		width: 100%;
+		background: rgba(0,0,5,0.6);
+		position: fixed;
+		z-index: 1;
+	}
+
+	#logo-white {
+		display: block;
+		position: relative;
+  		top: 50%;
+  		transform: translateY(-58%);
+		float: left;
+		height: 47px;
+		width: 47px;
+		margin-left: 3%;
+	}
+
+	#logo-navy {
+		display: none;
+		position: relative;
+  		top: 50%;
+  		transform: translateY(-58%);
+		float: left;
+		height: 47px;
+		width: 47px;
+		margin-left: 3%;
+	}
+
+	#title-white {
+		display: block;
+		position: relative;
+  		top: 50%;
+  		transform: translateY(-50%);
+		float: left;
+		color: rgb(255,255,255);
+		font-family: "Bookman", sans-serif;
+		font-size: 55px;
+		font-weight: bold;
+		letter-spacing: 1.5px;
+		margin-left: 1.5%;
+		z-index: 3;
+	}
+
+	#title-navy {
+		display: none;
+		position: relative;
+  		top: 50%;
+  		transform: translateY(-50%);
+		float: left;
+		color: rgb(0,0,5);
+		font-family: "Bookman", sans-serif;
+		font-size: 55px;
+		font-weight: bold;
+		letter-spacing: 1.5px;
+		margin-left: 1.5%;
+		z-index: 3;
+	}
+
+	nav {
+		position: relative;
+  		top: 50%;
+  		transform: translateY(-50%);
+		float: right;
+		margin-right: 25px;
+	}
+
+	.fa-caret-down {
+		padding: 10px;
+	}
+
+	.dropdown {
+		display: inline-block;
+		position: relative;
+		padding: 8px;
+	}
+
+	.dropdown-content {
+		display: none;
+		position: absolute;
+		margin-right: 20px;
+		background-color: rgba(0,0,5,0.95);
+		z-index: 2;
+	}
+
+	.dropdown-content a {
+		text-decoration: none;
+		font-size: 15px;
+		font-family: "Bookman", sans-serif;
+		color: rgb(200,200,200);
+		font-weight: bold;
+		padding: 14px;
+		float: left;
+	}
+
+	.dropdown-content a:hover {
+		color: rgb(30,160,255);
+	}
+
+	.dropdown:hover .dropdown-content {
+		display: block;
+	}
+
+	.dropdown:hover .nav-list {
+		background: rgba(50,50,50,0.8);
+		color: rgba(255,255,255,0.5);
+		text-decoration: none;
+	}
+
+	.nav-list {
+		color: rgb(255,255,255);
+		font-family: "Bookman", sans-serif;
+		font-size: 18px;
+		font-weight: bold;
+		padding: 12px;
+	}
+
+	.content-border {
+		float: left;
+		-webkit-transform-style: preserve-3d;
+  		-moz-transform-style: preserve-3d;
+  		transform-style: preserve-3d;
+		height: 60px;
+		width: 100%;
+		background-color: rgb(0,0,5);
+		text-align: center;
+	}
+
+	.btn-japanese {
+		position: relative;
+  		top: 50%;
+  		transform: translateY(-50%);
+  		padding: 10px;
+  		background: rgb(0,0,5);
+  		font-weight: bold;
+  		color: rgb(30,160,255);
+  		border-style: solid;
+  		border-width: 1px;
+  		border-radius: 3px;
+  		border-color: rgb(30,160,255);
+	}
+
+	.navy-block {
+		float: left;
+		-webkit-transform-style: preserve-3d;
+  		-moz-transform-style: preserve-3d;
+  		transform-style: preserve-3d;
+  		margin-bottom: 20px;
+		height: 100px;
+		width: 100%;
+		background: rgb(18,18,18);
+		text-align: center;
+	}
+
+	.txt-head {
+		text-align: center;
+		position: relative;
+  		top: 50%;
+  		transform: translateY(-50%);
+		color: rgb(255,255,255);
+		font-family: "Bookman", sans-serif;
+		font-size: 26px;
+		font-weight: 100;
+	}
+
+	.txt-icon-head {
+		text-align: center;
+		color: rgb(255,255,255);
+		font-family: "Bookman", sans-serif;
+		font-size: 22px;
+		font-weight: normal;
+		padding-bottom: 20px;
+	}
+
+	.flaticons {
+		display: block;
+    	margin: 0 auto;
+    	margin-bottom: 20px;
+		height: 80px;
+		width: 80px;
+	}
+
+	.what-we-do-ipad {
+		display: none;
+	}
+
+	.upcoming-events {
+		text-align: center;
+		width: 100%;
+		height: 240px;
+		background: rgb(255,255,255);
+	}
+
+	.upcoming-events-img {
+		width: 100%;
+		height: 240px;
+		background-image: url(../img/disco.jpg);
+		background-size: 100% 100%;
+	}
+
+	.recruitment-img {
+		width: 100%;
+		height: 240px;
+	}
+
+	.recruitment {
+		text-align: center;
+		width: 100%;
+		height: 240px;
+		background: rgb(255,255,255);
+	}
+
+	.sm {
+		float: left;
+		-webkit-transform-style: preserve-3d;
+  		-moz-transform-style: preserve-3d;
+  		transform-style: preserve-3d;
+		width: 100%;
+		height: 180px;
+		background: rgb(0,0,5);
+		text-align: center;
+	}
+
+	.follow-us {
+		margin-top: 25px;
+		font-family: Brush Script Std, Brush Script MT, cursive;
+		font-size: 20px;
+		color: rgb(255,255,255);
+		font-weight: bold;
+	}
+
+	.sm-icon {
+		margin-top: 15px;
+		margin-right: 18px;
+		margin-left: 18px;
+		font-size: 35px;
+		color: rgb(255,255,255);
+	}
+
+	.border-top {
+		margin-top: 20px;
+		border-top: solid;
+		border-color: rgb(255,255,255);
+		border-width: 5px;
+		color: rgb(0,0,5);
+	}
+
+	.copyright-big {
+		color: rgb(30,160,255);
+		font-family: "Bookman", sans-serif;
+		font-size: 13px;
+		font-weight: 200;
+	}
+
+	.terms {
+		margin-left: 20px;
+		color: rgb(30,160,255);
+		font-family: "Bookman", sans-serif;
+		font-size: 13px;
+		font-weight: 200;
+	}
+
+	.privacy {
+		margin-left: 20px;
+		color: rgb(30,160,255);
+		font-family: "Bookman", sans-serif;
+		font-size: 13px;
+		font-weight: 200;
+	}
+}
+
+/* Desktop screens */
+
+@media screen and (min-width: 1281px) {
+	.sidenav, .ipad, .copyright-small, .btn-japanese-small, .line, .what-we-do-ipad, .btn-what-we-do-ipad, #menu-icon, #menu-icon-navy {
+		display: none;
+	}
+
+	.container {
+		width: 100%;
+		margin: auto;
+	}
+
+	.small-container {
+		width: 90%;
+		margin: auto;
+	}
+
+	.smallest-container {
+		width: 50%;
+		margin: auto;
+	}
+
+	header {
+		transition: background 0.2s linear;
+		-webkit-transform-style: preserve-3d;
+  		-moz-transform-style: preserve-3d;
+  		transform-style: preserve-3d;
+		height: 115px;
+		width: 100%;
+		background: rgba(0,0,5,0.6);
+		position: fixed;
+		z-index: 1;
+	}
+
+	#logo-white {
+		display: block;
+		position: relative;
+  		top: 50%;
+  		transform: translateY(-58%);
+		float: left;
+		height: 47px;
+		width: 47px;
+		margin-left: 3%;
+	}
+
+	#logo-navy {
+		display: none;
+		position: relative;
+  		top: 50%;
+  		transform: translateY(-58%);
+		float: left;
+		height: 47px;
+		width: 47px;
+		margin-left: 3%;
+	}
+
+	#title-white {
+		display: block;
+		position: relative;
+  		top: 50%;
+  		transform: translateY(-50%);
+		float: left;
+		color: rgb(255,255,255);
+		font-family: "Bookman", sans-serif;
+		font-size: 55px;
+		font-weight: bold;
+		letter-spacing: 1.5px;
+		margin-left: 1.5%;
+		margin-left: 1%;
+		z-index: 3;
+	}
+
+	#title-navy {
+		display: none;
+		position: relative;
+  		top: 50%;
+  		transform: translateY(-50%);
+		float: left;
+		color: rgb(0,0,5);
+		font-family: "Bookman", sans-serif;
+		font-size: 55px;
+		font-weight: bold;
+		letter-spacing: 1.5px;
+		margin-left: 1%;
+		z-index: 3;
+	}
+
+	nav {
+		position: relative;
+  		top: 50%;
+  		transform: translateY(-50%);
+		float: right;
+		margin-right: 25px;
+	}
+
+	.fa-caret-down {
+		padding: 10px;
+	}
+
+	.dropdown {
+		display: inline-block;
+		position: relative;
+		padding: 8px;
+	}
+
+	.dropdown-content {
+		display: none;
+		position: absolute;
+		margin-right: 20px;
+		background-color: rgba(0,0,5,0.95);
+		z-index: 2;
+	}
+
+	.dropdown-content a {
+		text-decoration: none;
+		font-size: 15px;
+		font-family: "Bookman", sans-serif;
+		color: rgb(255,255,255);
+		font-weight: bold;
+		padding: 14px;
+		float: left;
+	}
+
+	.dropdown-content a:hover {
+		color: rgb(30,160,255);
+	}
+
+	.dropdown:hover .dropdown-content {
+		display: block;
+	}
+
+	.dropdown:hover .nav-list {
+		background: rgba(50,50,50,0.8);
+		color: rgba(255,255,255,0.5);
+		text-decoration: none;
+	}
+
+	.nav-list {
+		color: rgb(255,255,255);
+		font-family: "Bookman", sans-serif;
+		font-size: 18px;
+		font-weight: bold;
+		padding: 12px;
+	}
+
+	.content-border {
+		float: left;
+		-webkit-transform-style: preserve-3d;
+  		-moz-transform-style: preserve-3d;
+  		transform-style: preserve-3d;
+		height: 60px;
+		width: 100%;
+		background-color: rgb(0,0,5);
+		text-align: center;
+	}
+
+	.btn-japanese {
+		position: relative;
+  		top: 50%;
+  		transform: translateY(-50%);
+  		padding: 10px;
+  		background: rgb(0,0,5);
+  		font-weight: bold;
+  		color: rgb(30,160,255);
+  		border-style: solid;
+  		border-width: 1px;
+  		border-radius: 3px;
+  		border-color: rgb(30,160,255);
+	}
+
+	.navy-block {
+		float: left;
+		-webkit-transform-style: preserve-3d;
+  		-moz-transform-style: preserve-3d;
+  		transform-style: preserve-3d;
+  		margin-bottom: 20px;
+		height: 100px;
+		width: 100%;
+		background: rgb(18,18,18);
+		text-align: center;
+	}
+
+	.txt-head {
+		text-align: center;
+		position: relative;
+  		top: 50%;
+  		transform: translateY(-50%);
+		color: rgb(255,255,255);
+		font-family: "Bookman", sans-serif;
+		font-size: 26px;
+		font-weight: 100;
+	}
+
+	.txt-icon-head {
+		text-align: center;
+		color: rgb(255,255,255);
+		font-family: "Bookman", sans-serif;
+		font-size: 22px;
+		font-weight: normal;
+		padding-bottom: 20px;
+	}
+
+	.flaticons {
+		display: block;
+    	margin: 0 auto;
+    	margin-bottom: 20px;
+		height: 80px;
+		width: 80px;
+	}
+
+	.upcoming-events {
+		text-align: center;
+		width: 100%;
+		height: 270px;
+		background: rgb(255,255,255);
+	}
+
+	.upcoming-events-img {
+		width: 100%;
+		height: 270px;
+		background-image: url(../img/disco.jpg);
+		background-size: 100% 100%;
+	}
+
+	.recruitment-img {
+		width: 100%;
+		height: 270px;
+	}
+
+	.recruitment {
+		text-align: center;
+		width: 100%;
+		height: 270px;
+		background: rgb(255,255,255);
+	}
+
+	.sm {
+		float: left;
+		-webkit-transform-style: preserve-3d;
+  		-moz-transform-style: preserve-3d;
+  		transform-style: preserve-3d;
+		width: 100%;
+		height: 180px;
+		background: rgb(0,0,5);
+		text-align: center;
+	}
+
+	.follow-us {
+		margin-top: 25px;
+		font-family: Brush Script Std, Brush Script MT, cursive;
+		font-size: 20px;
+		color: rgb(255,255,255);
+		font-weight: bold;
+	}
+
+	.sm-icon {
+		margin-top: 15px;
+		margin-right: 18px;
+		margin-left: 18px;
+		font-size: 35px;
+		color: rgb(255,255,255);
+	}
+
+	.border-top {
+		margin-top: 20px;
+		border-top: solid;
+		border-color: rgb(255,255,255);
+		border-width: 5px;
+		color: rgb(0,0,5);
+	}
+
+	.copyright-big {
+		color: rgb(30,160,255);
+		font-family: "Bookman", sans-serif;
+		font-size: 13px;
+		font-weight: 200;
+	}
+
+	.terms {
+		margin-left: 20px;
+		color: rgb(30,160,255);
+		font-family: "Bookman", sans-serif;
+		font-size: 13px;
+		font-weight: 200;
+	}
+
+	.privacy {
+		margin-left: 20px;
+		color: rgb(30,160,255);
+		font-family: "Bookman", sans-serif;
+		font-size: 13px;
+		font-weight: 200;
+	}
+}
+
+/* APPLIES TO ALL */
+
+header.white {
+	transition: background 0.2s linear;
+	border-bottom: solid;
+	border-width: 1px;
+	border-color: rgb(200,200,200);
+	background: rgb(255,255,255);
+}
+
+.nav-list.navy {
+	color: rgb(5,5,15);
+}
+
+.carousel {
+	float: left;
+	position: relative;
+	height: 100%;
+	width: 100%;
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+.txt-icon-body {
+	text-align: center;
+	margin-top: 8px;
+	margin-bottom: 40px;
+	line-height: 22px;
+	font-family: "Bookman", sans-serif;
+	font-size: 16px;
+	font-weight: 350;
+	color: rgb(255,255,255);
+}
+
+.btn-what-we-do {
+	position: relative;
+  	top: 50%;
+  	transform: translateY(-50%);
+  	border-radius: 3px;
+  	padding: 14px;
+	background: rgb(18,18,18);
+  	border-style: solid;
+  	border-width: 1px;
+  	border-color: rgb(255,255,255);
+  	color: rgb(255,255,255);
+}
+
+.txt-banner-head {
+	text-align: left;
+	padding: 15px;
+	font-family: "Bookman", sans-serif;
+	font-size: 15px;
+	font-weight: bold;
+	color: rgb(5,5,15);
+}
+
+.txt-banner-body {
+	margin-top: 15px;
+	text-align: center;
+	color: rgb(5,5,15);
+	font-family: "Bookman", sans-serif;
+	font-size: 25px;
+	font-weight: bold;
+	border-bottom: solid;
+	border-color: rgb(255,255,255);
+	border-width: 1px;
+	padding-bottom: 8px;
+}
+
+.btn-event-page {
+	margin-top: 12px;
+	border: none;
+  	border-radius: 3px;
+  	padding: 14px;
+	background: rgb(255,255,255);
+  	border-style: solid;
+  	border-width: 3px;
+  	border-color: rgb(0,0,5);
+  	color: rgb(0,0,5);
+  	font-weight: bolder;
+  	font-size: 14px;
+}
+
+.btn-event-page:hover {
+	border-color: rgb(30,160,225);
+  	color: rgb(30,160,225);
+}
+
+.btn-join {
+	margin-top: 12px;
+	border: none;
+  	border-radius: 3px;
+  	padding: 14px;
+	background: rgb(255,255,255);
+  	border-style: solid;
+  	border-width: 3px;
+  	border-color: rgb(0,0,5);
+  	color: rgb(0,0,5);
+  	font-weight: bolder;
+  	font-size: 16px;
+}
+
+.btn-join:hover {
+	border-color: rgb(30,160,225);
+  	color: rgb(30,160,225);
+}
+
+.sm-icon:hover {
+	color: rgb(100,100,100);
+	cursor: pointer;
+}
+
+#content-about {
+	float: left;
+	background-color: rgb(18,18,18);
+	padding: 60px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+#content-title {
+	background-color: rgb(18,18,18);
+}
+
+#content-upcoming-events, #content-recruitment, #content-posts {
+	float: left;
+	background-color: rgb(18,18,18);
+}
+
+.content-posts-1, .content-posts-2 {
+	padding: 50px;
+	padding-top: 30px;
+}
+
+.content-posts-1:hover, .content-posts-2:hover {
+	transition: background 0.2s linear;
+	cursor: pointer;
+	background-color: rgb(28,28,28);
+}
+
+.main-tag {
+	color: rgb(30,160,255);
+	font-family: "Bookman", sans-serif;
+	font-size: 13px;
+	font-weight: 200;
+}
+
+.main-text {
+	margin-top: 25px;
+	line-height: 23px;
+	color: rgb(255,255,255);
+	font-family: "Bookman", sans-serif;
+	font-size: 16px;
+	font-weight: 350;
+}
+
+.main-header {
+	margin-top: 35px;
+	text-align: center;
+	color: rgb(255,255,255);
+	font-family: "Bookman", sans-serif;
+	font-size: 25px;
+	font-weight: bold;
+	border-bottom: solid;
+	border-color: rgb(255,255,255);
+	border-width: 1px;
+	padding-bottom: 15px;
+}
+
+.top-header {
+	position: relative;
+  	top: 50%;
+  	transform: translateY(-50%);
+	text-align: center;
+	color: rgb(200,170,110);
+	font-family: "Bookman", sans-serif;
+	font-size: 22px;
+	font-weight: 100;
+}
+
+#menu-icon, #menu-icon-navy, #logo-white:hover, #logo-navy:hover, #title-white:hover, #title-navy, .nav-list:hover, .terms:hover, .privacy:hover {
+	cursor: pointer;
+}

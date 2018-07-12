@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>TISA - Tsukuba International Student Association</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="keywords" content="tisa tsukuba international student association tsukuba.international university of tsukuba japanese students foreigners organization club circle global">
+<meta name="description" content="The Tsukuba International Student Association, known as TISA, is a student organization run by University of Tsukuba students to connect Japanese and foreigners in Tsukuba by hosting events and providing services.">
+<link rel="icon" href="img/tab-logo.png">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="css/main.css?v=1.1">
+<link rel="stylesheet" type="text/css" href="css/resets.css?v=1.1">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript" src="scripts/main.js"></script>
+</head>
+<body>
+
+<script>document.body.className += ' fade-out';</script>
+
+<!-- mobile nav -->
+<div id="mySidenav" class="sidenav">
+	<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+	<a class="main-nav" data-toggle="collapse" data-target="#interact">INTERACT&nbsp;&nbsp;<i class="fa fa-angle-down"></i></a>
+	<div class="collapse" id="interact">
+		<a class="sub-nav" href="events">Events</a>
+		<a class="sub-nav" href="exchange">Exchange</a>
+	</div>
+	<a class="main-nav" data-toggle="collapse" data-target="#support">SUPPORT&nbsp;&nbsp;<i class="fa fa-angle-down"></i></a>
+	<div class="collapse" id="support">
+		<a class="sub-nav" href="circles">Circles</a>
+		<a class="sub-nav" href="jobs">Find Jobs</a>
+		<a class="sub-nav" href="scholarships">Scholarships</a>
+	</div>
+	<a class="main-nav" data-toggle="collapse" data-target="#about">ABOUT&nbsp;&nbsp;<i class="fa fa-angle-down"></i></a>
+	<div class="collapse" id="about">
+		<a class="sub-nav" href="about">About Us</a>
+		<a class="sub-nav" href="join">Join Us</a>
+		<a class="sub-nav" href="contact">Contact</a>
+	</div>
+</div>
+
+<div class="container">
+	
+	<!-- header -->
+	<header>
+		<img id="logo-white" src="img/leaf-white.png" onclick="window.location.href=''">
+		<img id="logo-navy" src="img/leaf-navy.png" onclick="window.location.href=''">
+		<h1 id="title-white" onclick="window.location.href=''">TISA</h1>
+		<h1 id="title-navy" onclick="window.location.href=''">TISA</h1>
+		<!-- nav -->
+		<nav>
+			<div class="dropdown">
+				<a class="nav-list">INTERACT<i class="fa fa-caret-down"></i></a>
+				<div class="dropdown-content">
+					<a href="events">Events</a>
+					<a href="exchange">Exchange</a>
+				</div>
+			</div>
+			<div class="dropdown">
+				<a class="nav-list">SUPPORT<i class="fa fa-caret-down"></i></a>
+				<div class="dropdown-content">
+					<a href="circles">Circles</a>
+					<a href="jobs">Find Jobs</a>
+					<a href="scholarships">Scholarship</a>
+				</div>
+			</div>
+			<div class="dropdown">
+				<a class="nav-list">ABOUT<i class="fa fa-caret-down"></i></a>
+				<div class="dropdown-content">
+					<a href="about">About Us</a>
+					<a href="join">Join Us</a>
+					<a href="contact">Contact</a>
+				</div>
+			</div>
+		</nav>
+		<img id="menu-icon" src="img/menu-icon.png" onclick="openNav()">
+		<img id="menu-icon-navy" src="img/menu-icon-navy.png" onclick="openNav()">
+	</header>
+
+	<!-- carousel -->
+	<div class="carousel slide" data-ride="carousel">
+		<ol class="carousel-indicators">
+			<li data-target=".carousel" data-slide-to="0" class="active"></li>
+			<li data-target=".carousel" data-slide-to="1"></li>
+		</ol>
+		<div class="carousel-inner">
+			<div class="item active">
+				<img src="./img/summer-bbq.jpg">
+			</div>
+			<div class="item">
+				<img src="./img/halloween-friends.jpg">
+			</div>
+		</div>
+		<a class="left carousel-control" href=".carousel" data-slide="prev"></a>
+		<a class="right carousel-control" href=".carousel" data-slide="next"></a>
+	</div>
+
+	<!-- change language -->
+	<div class="content-border">
+		<button type="button" class="btn-japanese" onclick="window.location.href=''">日本語で見る</button>
+	</div>
+
+	<!-- info -->
+	<div class="row" id="content-title">
+		<div class="small-container">
+			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 navy-block">
+				<h1 class="txt-head">Become a part of Tsukuba's international student community</h1>
+			</div>
+		</div>
+	</div>
+	
+	<div class="line"></div>
+	
+	<div class="row" id="content-about">
+		<div class="small-container">
+			<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+				<img class="flaticons" src="img/calendar.png">
+				<h2 class="txt-icon-head">Join monthly events</h2>
+				<p class="txt-icon-body">Come to holiday themed events that gather more than 100 students</p>
+			</div>
+			<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+				<img class="flaticons" src="img/talking.png">
+				<h2 class="txt-icon-head">Improve language skills</h2>
+				<p class="txt-icon-body">Practice any language by trying our language exchange program</p>
+			</div>
+			<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+				<img class="flaticons" src="img/idea.png">
+				<h2 class="txt-icon-head">Discover new ideas</h2>
+				<p class="txt-icon-body">Find out ways to connect Japanese and International students</p>
+			</div>
+			<div class="col-lg-12 col-md-12 col-sm-6 col-xs-12 what-we-do-ipad">
+				<button type="button" class="btn-what-we-do-ipad" onclick="window.location.href='about'">WHAT WE DO</button>
+			</div>
+		</div>
+		<div class="navy-block what-we-do-laptop">
+			<button type="button" class="btn-what-we-do" onclick="window.location.href='about'">WHAT WE DO</button>
+		</div>
+	</div>
+
+<div class="row" id="content-upcoming-events">
+<div class="col-md-4 space-0">
+<div class="upcoming-events">
+<h3 class="txt-banner-head">UPCOMING EVENTS</h3>
+<h2 class="txt-banner-body">Thanksgiving Dinner<br>Party at Peach!</h2>
+<button type="button" class="btn-event-page" onclick="window.open('https://www.facebook.com/events/480840105634896/','_blank');">EVENT PAGE</button>
+</div>
+</div>
+<div class="col-md-8 space-0">
+<img class="upcoming-events-img img-responsive" src="./img/disco.jpg"></img>
+</div>
+</div>
+<div class="row" id="content-recruitment">
+<div class="col-md-8 space-0 laptop">
+<img class="recruitment-img img-responsive" src="./img/members.png"></img>
+</div>
+<div class="col-md-4 space-0">
+<div class="recruitment">
+<h3 class="txt-banner-head">NOW RECRUITING</h3>
+<h2 class="txt-banner-body">Interested in<br>helping us?</h2>
+<button type="button" class="btn-join" onclick="window.location.href='mailto:join@tsukuba.international'">join@tsukuba.international</button>
+</div>
+</div>
+<div class="col-md-8 space-0 ipad">
+<img class="recruitment-img img-responsive" src="./img/members.png"></img>
+</div>
+</div>
+<div class="row" id="content-posts">
+<div class="col-md-6 content-posts-2" onclick="window.location.href='about'">
+<h3 class="main-tag">ABOUT</h3>
+<h2 class="main-header">AN ORGANIZATION SINCE 1980?</h2>
+<p class="main-text">The Tsukuba International Student Association is a non-profit student-run organization working to connect Japanese and international students of the university mainly by creating monthly events. The still young organization appeared in 1980 during the "pioneer days" of Tsukuba when the school had just recently been transferred from Tokyo...</p>
+</div>
+<div class="col-md-6 content-posts-1" onclick="window.location.href='events'">
+<h3 class="main-tag">EVENTS</h3>
+<h2 class="main-header">WELCOMING PARTY</h2>
+<p class="main-text">Every October and April, we organize and host a welcoming party in Tsukuba to kick off the new semesters. More than 100 students from all backgrounds and ethnicities gather to enjoy the night socializing, and even dancing. Our mission is to connect as many people as possible and provide a welcoming atmosphere in the usually quiet city of Tsukuba...<br></p>
+</div>
+</div>
+<div class="sm">
+<h2 class="follow-us">Follow Us:</h2>
+<!-- Large Screens -->
+<i class="fa fa-facebook-square sm-icon" onclick="window.open('https://www.facebook.com/tsukuba.international','_blank');"></i>
+<i class="fa fa-twitter-square sm-icon" onclick="window.open('https://twitter.com','_blank');"></i>
+<i class="fa fa-instagram sm-icon" onclick="window.open('https://instagram.com/humansoftsukuba','_blank');"></i>
+<!-- Mobile -->
+<div class="smallest-container"><p class="border-top">Handmade by Yuji Schuster</p></div>
+<div class="copyright-footer">
+<b class="copyright-small"><br>© 2017 TISA</b>
+<b class="copyright-big"><br>Copyright © 2017 Tsukuba International Student Association</b>
+<b class="terms" onclick="window.location.href='terms'">Terms of Use</b>
+<b class="privacy" onclick="window.location.href='privacy'">Privacy Policy</b>
+</div>
+</div>
+</div>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>
